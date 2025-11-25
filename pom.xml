@@ -54,6 +54,11 @@
       <version>2.0.16</version>
       <scope>test</scope>
     </dependency>  </dependencies>
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-devtools-v104</artifactId>
+        <version>4.0.0-alpha-7</version>
+    </dependency>
   <build>
     <plugins>
 <plugin>
@@ -62,9 +67,7 @@
         <version>3.5.2</version>
         <configuration>
           <testFailureIgnore>true</testFailureIgnore>
-<argLine>
-            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-          </argLine>
+
           <systemProperties>
             <property>
               <name>allure.results.directory</name>
@@ -72,11 +75,7 @@
             </property>
           </systemProperties>        </configuration>
 <dependencies>
-          <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>${aspectj.version}</version>
-          </dependency>
+
         </dependencies>      </plugin>
 <plugin>
         <groupId>io.qameta.allure</groupId>
