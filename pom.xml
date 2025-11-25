@@ -27,12 +27,14 @@
       <artifactId>aspectjweaver</artifactId>
       <version>${aspectj.version}</version>
       <scope>provided</scope>
-    </dependency><dependency>
+    </dependency>
+      <dependency>
       <groupId>com.codeborne</groupId>
       <artifactId>selenide </artifactId>
       <version>7.6.0</version>
       <scope>test</scope>
-    </dependency><dependency>
+    </dependency>
+      <dependency>
       <groupId>io.qameta.allure</groupId>
       <artifactId>allure-selenide</artifactId>
       <version>${allure.version}</version>
