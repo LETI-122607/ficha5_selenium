@@ -1,6 +1,7 @@
-package dynamic.tests;
+package ex1B.dynamic.tests;
 
 
+import ex1B.dynamic.pages.DynamicContentPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -13,22 +14,20 @@ public class DynamicContentTest {
     @Test
     public void testDynamicContentChanges() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
+        DynamicContentPage dynamicContentPage = new DynamicContentPage(driver);
 
         try {
             // 1. Aceder à página
-            driver.get("https://the-internet.herokuapp.com/dynamic_content");
+            dynamicContentPage.abrirPagina();
 
             // 2. Recolher o conteúdo da primeira secção (texto)
-            WebElement firstText = driver.findElement(By.xpath("(//div[@id='content']//div[@class='large-10 columns'])[1]"));
-            String textoAntes = firstText.getText();
+            String textoAntes= dynamicContentPage.obterPrimeiroTexto();
 
             // 3. Fazer refresh
-            driver.navigate().refresh();
+            dynamicContentPage.atualizarPagina();
 
             // 4. Recolher novamente
-            WebElement firstTextAfter = driver.findElement(By.xpath("(//div[@id='content']//div[@class='large-10 columns'])[1]"));
-            String textoDepois = firstTextAfter.getText();
-
+            String textoDepois= dynamicContentPage.obterPrimeiroTexto();
             // 5. Verificar que o conteúdo mudou
             Assertions.assertNotEquals(textoAntes, textoDepois,
                     "O conteúdo dinâmico deveria ter mudado após o refresh!");
