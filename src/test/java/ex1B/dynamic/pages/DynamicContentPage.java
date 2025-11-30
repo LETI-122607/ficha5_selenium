@@ -1,4 +1,4 @@
-package pages;
+package ex1B.dynamic.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
