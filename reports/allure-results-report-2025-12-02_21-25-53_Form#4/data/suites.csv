@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","4116","acceptanceFillForm()","","2025-12-02","passed","2025-12-02","","ex2.form.tests.VaadinFormExampleTest","ex2.form.tests.VaadinFormExampleTest","acceptanceFillForm"
+"","4093","testDynamicContentChanges()","","2025-12-02","passed","2025-12-02","","ex1B.dynamic.tests.DynamicContentTest","ex1B.dynamic.tests.DynamicContentTest","testDynamicContentChanges"
+"","3831","navigationToAllTools()","","2025-12-02","passed","2025-12-02","","iscteiul.ista.ficha5_selenium.MainPageTest","iscteiul.ista.ficha5_selenium.MainPageTest","navigationToAllTools"
+"","3088","toolsMenu()","","2025-12-02","passed","2025-12-02","","iscteiul.ista.ficha5_selenium.MainPageTest","iscteiul.ista.ficha5_selenium.MainPageTest","toolsMenu"
+"","4843","search()","","2025-12-02","passed","2025-12-02","","iscteiul.ista.ficha5_selenium.MainPageTest","iscteiul.ista.ficha5_selenium.MainPageTest","search"
