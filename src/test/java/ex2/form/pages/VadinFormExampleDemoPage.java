@@ -11,7 +11,7 @@ import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class VaadinFormExampleDemoPage {
+public class VadinFormExampleDemoPage {
     private final String url = "https://vaadin-form-example.demo.vaadin.com/";
 
     // Uso de XPath com alternativas para evitar problemas com seletores compostos
@@ -29,17 +29,17 @@ public class VaadinFormExampleDemoPage {
     @FindBy(css = ".notification, .result, #success")
     private SelenideElement successMessage;
 
-    public static VaadinFormExampleDemoPage openPage() {
+    public static VadinFormExampleDemoPage openPage() {
         Selenide.open("https://vaadin-form-example.demo.vaadin.com/");
-        return Selenide.page(VaadinFormExampleDemoPage.class);
+        return Selenide.page(VadinFormExampleDemoPage.class);
     }
 
     // métodos fluent para preencher o form
-    //  public VaadinFormExampleDemoPage setName(String name) {
+    //  public VadinFormExampleDemoPage setName(String name) {
     //      nameInput.setValue(name);
     //    return this;
     //  }
-    public VaadinFormExampleDemoPage setName(String name) {
+    public VadinFormExampleDemoPage setName(String name) {
         String[] partes = name.trim().split("\\s+");
         String nome1 = partes[0];
         String nome2 = partes[1];
@@ -55,11 +55,7 @@ public class VaadinFormExampleDemoPage {
         return this;
     }
 
-    // public VaadinFormExampleDemoPage setUserHandle(String handle) {
-    //    handleInput.setValue(handle);
-    //    return this;
-    // }
-    public VaadinFormExampleDemoPage setUserHandle(String handle) {
+    public VadinFormExampleDemoPage setUserHandle(String handle) {
         WebElement input = Selenide.executeJavaScript(
                 "return document.querySelectorAll('vaadin-text-field')[2]" +
                         ".shadowRoot.querySelector('input')"
@@ -69,11 +65,8 @@ public class VaadinFormExampleDemoPage {
         return this;
     }
 
-    // public VaadinFormExampleDemoPage setPassword(String password) {
-    //   passwordInput.setValue(password);
-    //   return this;
-    //}
-    public VaadinFormExampleDemoPage setPassword(String password) {
+
+    public VadinFormExampleDemoPage setPassword(String password) {
         WebElement input = Selenide.executeJavaScript(
                 "return document.querySelectorAll('vaadin-password-field')[0]" +
                         ".shadowRoot.querySelector('input')"
@@ -89,11 +82,8 @@ public class VaadinFormExampleDemoPage {
         return this;
     }
 
-    // public VaadinFormExampleDemoPage submit() {
-//submitButton.click();
-    //    return this;
-    // }
-    public VaadinFormExampleDemoPage submit() {
+
+    public VadinFormExampleDemoPage submit() {
         WebElement button = Selenide.executeJavaScript(
                 "return document.querySelector('vaadin-button')" +
                         ".shadowRoot.querySelector('button')"
@@ -126,4 +116,6 @@ public class VaadinFormExampleDemoPage {
                 .shouldBe(Condition.visible)
                 .shouldHave(Condition.text(expectedText));
     }
+
+
 }
