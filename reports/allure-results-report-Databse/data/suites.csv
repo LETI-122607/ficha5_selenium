@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","4871","acceptanceFillForm()","","2025-12-03","passed","2025-12-03","","ex2.form.tests.VaadinFormExampleTest","ex2.form.tests.VaadinFormExampleTest","acceptanceFillForm"
+"","3662","Validar e clicar no link IMDB do filme 'Knives Out'","","2025-12-03","passed","2025-12-03","","ex2.Database.Tests.MovieDatabaseTest","ex2.Database.Tests.MovieDatabaseTest","testLinkKnivesOut"
+"","3172","Validar e clicar no link IMDB do filme 'The Last Jedi'","","2025-12-03","passed","2025-12-03","","ex2.Database.Tests.MovieDatabaseTest","ex2.Database.Tests.MovieDatabaseTest","testLinkLastJedi"
+"","3835","Ordenar a tabela pelo Ano de Lançamento (Release Year)","","2025-12-03","passed","2025-12-03","","ex2.Database.Tests.MovieDatabaseTest","ex2.Database.Tests.MovieDatabaseTest","testOrdenarReleaseYear"
+"","992","Ordenar a tabela pelo Título (Ascendente e Descendente)","","2025-12-03","passed","2025-12-03","","ex2.Database.Tests.MovieDatabaseTest","ex2.Database.Tests.MovieDatabaseTest","testOrdenarTitle"
+"","3031","Validar e clicar no link IMDB do filme 'Law Abiding Citizen'","","2025-12-03","passed","2025-12-03","","ex2.Database.Tests.MovieDatabaseTest","ex2.Database.Tests.MovieDatabaseTest","testLinkLawAbidingCitizen"
