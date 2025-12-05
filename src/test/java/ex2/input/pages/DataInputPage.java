@@ -1,4 +1,4 @@
-package test_suite6.pages;
+package ex2.input.pages;
 
 import com.codeborne.selenide.ElementsCollection; // Importar isso
 import com.codeborne.selenide.SelenideElement;

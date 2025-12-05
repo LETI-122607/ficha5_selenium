@@ -1,9 +1,9 @@
-package test_suite6.tests;
+package ex2.input.tests;
 
 import com.codeborne.selenide.Configuration;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.*;
-import test_suite6.pages.DataInputPage;
+import ex2.input.pages.DataInputPage;
 
 import static org.junit.jupiter.api.Assertions.*;
 
