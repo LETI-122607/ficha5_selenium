@@ -22,6 +22,5 @@ public class MainPage {
     public WebElement acceptCookiesButton;
 
     public MainPage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
-    }
+        PageFactory.initElements(driver,this);}
 }
